@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h2>Javascript String Methods</h2>
+        <p>search a string for "doing", display the position of the match and replace the word "how are" with "how are you" and display</p>
+        <p id ="search_result"></p>
+        <p id ="replace_result"></p>
+        <p id ="string_result"></p>
+        <p>This example demonstrates how to use <b>catch</b>to display an error.</p>
+        <p id="result"></p>
+        <script>
+            var str ="hello how are doing for the day";
+            var search_position=str.search("doing");
+            var txt=str.replace("how are","how are you")
+            var x=70;
+            var y=50;
+            document.getElementById("search_result").innerHTML=search_position;
+            document.getElementById("replace_result").innerHTML=txt;
+            document.getElementById("string_result").innerHTML=String(x)+String(y);//does not add because it is a string it concatenates
+            try {
+                addalert.getElementById("error_message").innerHTML=err.message;
+            }
+            catch(err)  {
+                document.getElementById("error_message").innerHTML=err.message;
+            }
+            add = (a,b) =>a+b;
+            document.getElementById("result").innerHTML=add(10,20);
+        </script>
+    </body>
+</html>
